@@ -2,7 +2,9 @@
 장고 게시판 토이프로젝트
 
 *****
-
+bootstrap(dark) : 3.3.2v
+python : 3.9.5 64-bit
+django : 3.2.6
 *****
 
 
