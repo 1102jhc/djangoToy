@@ -30,4 +30,12 @@ Run 'python manage.py migrate' to apply them.
 python manage.py createsuperuser
 
 ```
+*****
+## 하다가 막힌 것들
+```
+1. 데이터를 역순으로 정렬하기 위해선 views.py에서 오브젝트를 가져올 때 order_by('-칼럼명')을 해준다.
+
+```
+
+*****
 
