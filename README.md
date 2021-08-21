@@ -45,11 +45,16 @@ on_delete 옵션
  - CASCADE : ForeignKeyField가 바라보는 값이 삭제될 때 ForeignKeyField를 포함하는 모델 인스턴스도 삭제
  - PROTECT : ForeignKeyField가 바라보는 값이 삭제될 때 삭제가 되지 않도록 ProtectedError를 발생시킴
  - SET_NULL : ForeignKeyField가 바라보는 값이 삭제될 때 ForeignKeyField값을 null로 바꾼다.(null=True일 때만 가능)
- - SET_DEFAULT : ForeignKeyField가 바라보는 값이 삭제될 때 ForeignKeyField값을 default값으로 바꿈.(default값이 있을 때만 가능)
+ - SET_DEFAULT : ForeignKeyField가 바라보는 값이 삭제될 때 ForeignKeyField값을 default값으로 바꿈.(default값이 있을 때만 f가능)
  - SET() : ForeignKeyField가 바라보는 값이 삭제될 때 ForeignKeyField값을 SET에 설정된 함수 등에 의해 설정
  - DO_NOTHING : ForeignKeyField가 바라보는 값이 삭제될 때 아무런 행동을 취하지 않음. 
   * 참조무결성을 해칠 위험 존재
  
 ```
 *****
+## 고민한 점
+```
+1. user 삭제 시 user가 작성한 게시글도 함께 삭제할 지 고민
+- 
+```
 
