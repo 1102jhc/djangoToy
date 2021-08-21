@@ -26,7 +26,8 @@ python manage.py startapp board
 데이터베이스 구조가 구성되어 있지 않을 경우 아래와 같은 오류 발생
 You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.    
 Run 'python manage.py migrate' to apply them.
->python manage.py migrate
+>python manage.py makemigrations  * 변경사항 마이그레이션 파일로 생성
+>python manage.py migrate         * 변경된 마이그레이션 적용
 
 5. 슈퍼 유저 생성
 python manage.py createsuperuser
