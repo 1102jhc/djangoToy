@@ -58,6 +58,15 @@ on_delete 옵션
 --> 컬럼 설정은 db_column='컬럼명' 형태로 준다.
 
 ```
+```
+4. SQLITE3 를 사용하여 테스트 데이터를 만든 후, db 구조를 변경하는 데 id값이 꼬여서 sqlite3 를 초기화하게 되었다.
+초기화 순서
+--> django 각 앱의 migrations 파일에서 __init__.py 파일 빼고 전부 삭제해준다.
+--> sqlite3 를 삭제해준다.
+--> python manage.py makemigrations
+--> python manage.py migrate
+
+```
 *****
 ## 고민한 점
 ```
