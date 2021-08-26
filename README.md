@@ -66,6 +66,8 @@ on_delete 옵션
 --> python manage.py makemigrations
 --> python manage.py migrate
 
+* find 명령어를 사용하여 삭제해 줄 경우 윈도우 환경에서는 이미 find 명령어가 사용되고 있기 때문에 파일이 지워지지 않는다.
+환경변수 설정에서 우선순위를 바꾸어주어 사용할 수 있다. 
 ```
 ```
 4-1. sqlite3 초기화 후 superuser가 삭제되었다. superuser의 저장위치가 궁금해졌다.
